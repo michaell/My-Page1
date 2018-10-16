@@ -1,0 +1,50 @@
+$phone-portrait: 320px;
+$phone-landscape: 480px;
+
+$tablet-small: 600px;
+$tablet-portrait: 768px;
+$tablet-landscape: 980px;
+
+$desctop: 1200px;
+
+@media (min-width: 1201px) {
+	.container {
+		width: 1180px;
+	}
+}
+
+@media (max-width: $desctop) {
+	.container {
+		width: 970px;
+	}
+}
+
+@media (max-width: $tablet-landscape) {
+	.container {
+		width: 800px;
+	}
+}
+
+@media (max-width: $tablet-portrait) {
+	.container {
+		width: 600px;
+	}
+}
+
+@media (max-width: $tablet-small) {
+	.container {
+		width: 400px;
+	}
+}
+
+@media (max-width: $phone-landscape) {
+	.container {
+		width: 300px;
+	}
+}
+
+@media (max-width: $phone-portrait) {
+	.container {
+		width: 95%;
+	}
+}

@@ -1,6 +1,6 @@
 
 /*-----------------------------layout----------------------------*/
-$container-width: 1180px;
+// $container-width: 1180px;
 
 /*-----------------------------colors----------------------------*/
 $accent-color: rgb(221, 81, 26);
@@ -12,6 +12,11 @@ $default-font: Alegreya, serif;
 
 
 /*-----------------------------screen resolutions----------------------------*/
-$laptops: 1800px;
-$tablets: 1200px;
-$phones: 768px;
+$phone-portrait: 320px;
+$phone-landscape: 480px;
+
+$tablet-small: 600px;
+$tablet-portrait: 768px;
+$tablet-landscape: 980px;
+
+$desctop: 1200px;
