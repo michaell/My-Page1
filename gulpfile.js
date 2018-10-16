@@ -159,6 +159,10 @@ function styles() {
 		}))
 		.pipe(gulpIf(isDevelopment, sourcemaps.init()))
 		.pipe(sass())
+		.pipe(cssunit({
+			type     :    'px-to-rem',
+			rootSize :    16
+	  	}))
 		.pipe(autoprefixer('last 4 versions'))        
 		.pipe(rename({suffix: '.min'}))
 		.pipe(minifycss())
@@ -166,6 +170,7 @@ function styles() {
 		.pipe(gulp.dest(paths.styles.dest))
 		.pipe(browserSync.stream());      
 }
+
 
 /*------------------------build folder cleaning------------------------*/
 function clean() {
