@@ -1,5 +1,27 @@
-.about {
-	font-family: $mont;
-	font-size: 32px;
+body {
+	background: url(../images/bg-spider3000.jpg) no-repeat center 0;
+	background-size: cover;
 }
 
+.page-content__index {
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+.about {
+	padding: 10px;
+	background: $background-color;
+	font-family: $headline-font;
+	color: white;
+	text-align: center;
+}
+
+.about__name {
+	font-size: 48px;	
+}
+
+.about__position {
+	margin-top: 10px;
+	font-size: 28px;
+}

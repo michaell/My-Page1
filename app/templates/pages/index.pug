@@ -1,7 +1,14 @@
 extends ../template
 
 block variables
-	- var title = 'Index'
+	- var title = "Омелько - Главная"
 
 block content
-	.about Омелько Михаил
+	main.page-content.page-content__index
+		.about
+			.about__name
+				| Омелько Михаил
+				br
+				| Михайлович
+			.about__position исследователь
+			button.about__btn скачать резюме

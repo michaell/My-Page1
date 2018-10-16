@@ -1,10 +1,19 @@
 header.header 
-	.container
-		nav.navigation
-			ul.navigation__list
-				li.navigation__item
-					a.navigation__item(href="#") Обо мне
-				li.navigation__item
-					a.navigation__item(href="#") Список публикаций
-				li.navigation__item
-					a.navigation__item(href="#") Контакты
+	.container.header__wrapper
+		.header__logo
+			a.logo__link(href="index.html") Главная
+		.header__navigation
+			nav.navigation
+				ul.navigation__list
+					li.navigation__item
+						a.navigation__link(href="about.html") Обо мне
+					li.navigation__item
+						a.navigation__link(href="publications.html") Публикации
+					li.navigation__item
+						a.navigation__link(href="expeditions.html") Экспедиции
+					li.navigation__item
+						a.navigation__link(href="gallery.html") Галерея
+					li.navigation__item
+						a.navigation__link(href="resume.html") Резюме
+					li.navigation__item
+						a.navigation__link(href="contacts.html") Контакты
