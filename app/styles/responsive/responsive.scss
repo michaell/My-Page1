@@ -8,42 +8,70 @@ $tablet-landscape: 980px;
 $desctop: 1200px;
 
 @media (min-width: 1201px) {
+	html {
+		font-size: 16px;
+	};
+
 	.container {
 		width: 1180px;
 	}
 }
 
 @media (max-width: $desctop) {
+	html {
+		font-size: 15px;
+	};
+
 	.container {
 		width: 970px;
 	}
 }
 
 @media (max-width: $tablet-landscape) {
+	html {
+		font-size: 14px;
+	};
+
 	.container {
 		width: 800px;
 	}
 }
 
 @media (max-width: $tablet-portrait) {
+	html {
+		font-size: 14px;
+	};
+
 	.container {
 		width: 600px;
 	}
 }
 
 @media (max-width: $tablet-small) {
+	html {
+		font-size: 14px;
+	};
+
 	.container {
 		width: 400px;
 	}
 }
 
 @media (max-width: $phone-landscape) {
+	html {
+		font-size: 13px;
+	};
+
 	.container {
 		width: 300px;
 	}
 }
 
 @media (max-width: $phone-portrait) {
+	html {
+		font-size: 13px;
+	};
+
 	.container {
 		width: 95%;
 	}

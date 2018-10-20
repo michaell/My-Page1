@@ -1,0 +1,25 @@
+.list {
+	margin-left: 40px;
+	margin-bottom: 15px;
+}
+
+.list__item {
+	@extend.text;
+	display: block;
+	position: relative;
+	margin-bottom: 0;
+	font-size: 22px;
+	// border: 1px solid green;
+	&:before {
+		content: '';
+		display: block;
+		width: 5px;
+		height: 5px;
+		background: rgb(255, 255, 255);
+		position: absolute;
+		top: 50%;
+		left: -3px;
+		border-radius: 50%;
+		transform: translateY(-50%);
+	}
+}

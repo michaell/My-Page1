@@ -2,6 +2,8 @@
 	font-size: 23px;
 	color: white;
 	font-family: $default-font;
+	text-indent: 10px;
+	margin-bottom: 6px;
 }
 
 .headline {
@@ -17,5 +19,14 @@
 	font-size: 24px;
 	color: white;
 	margin-bottom: 5px;
-	text-indent: 20px;
+	text-indent: 70px;
+}
+
+.headline-small {
+	font-family: $headline-font;
+	text-align: left;
+	font-size: 20px;
+	color: white;
+	margin-bottom: 5px;
+	// text-indent: 70px;
 }

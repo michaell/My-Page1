@@ -1,6 +1,14 @@
-body {
+.index-bg {
 	background: url(../images/bg-spider3000.jpg) no-repeat center 0;
 	background-size: cover;
+	max-height: 100vh;
+
+	@include phone-landscape {
+		background-image: none;
+}
+	// @include phone-portrait {
+	// 	background-color: black
+	// }
 }
 
 .page-content__index {

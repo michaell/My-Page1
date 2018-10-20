@@ -1,5 +1,30 @@
-.page-content__publications {
-	display: flex;
-	flex-flow: column;
-	align-items: flex-start;
+.normal-bg {
+	background-image: url(../images/bg-spider3000.jpg);
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-attachment: fixed;
+	background-size: 100%;
 }
+
+.publications-list__section {
+	margin-bottom: 25px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.publications-list__item {
+	text-indent: 10px;
+	line-height: 24px;
+	margin-bottom: 12px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.publications-list__link {
+	position: relative;
+	display: block;
+}
+
+

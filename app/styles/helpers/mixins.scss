@@ -35,23 +35,49 @@
 }
 
 /*---------------------breakpoints--------------------*/
-//1200-1800
-@mixin laptops {
-	@media (max-width: $laptops){
+@mixin desctop-big {
+	@media (min-width: $desctop-big) {
+      @content;
+   }
+}
+// 981-1200px
+@mixin desctop {
+	@media (max-width: $desctop) {
       @content;
    }
 }
   
-  //768-1200
-@mixin tablets {
-	@media (max-width: $tablets){
+//769-980px
+@mixin tablet-landscape {
+	@media (max-width: $tablet-landscape) {
+      @content;
+	}
+}
+
+// 601-768px
+@mixin tablet-portrait {
+	@media (max-width: $tablet-portrait) {
+      @content;
+	}
+}
+
+// 481-600px
+@mixin tablet-small {
+	@media (max-width: $tablet-small) {
       @content;
 	}
 }
   
-  //320-768
-@mixin phones {
-	@media (max-width: $phones){
+  //321-480
+@mixin phone-landscape {
+	@media (max-width: $phone-landscape) {
+      @content; 
+	}
+}
+
+// untill 320px
+@mixin phone-portrait {
+	@media (max-width: $phone-portrait) {
       @content; 
 	}
 }
