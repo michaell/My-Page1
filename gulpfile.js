@@ -64,6 +64,10 @@ const paths = {
 	fonts: {
 		src: 'app/fonts/**/*.*',
 		dest: 'dist/assets/fonts/'
+   },
+	docs: {
+		src: 'app/docs/**/*.*',
+		dest: 'dist/assets/docs/'
    }
 };
 
@@ -75,7 +79,8 @@ const isDevelopment = true;
 /*------------paths to JS files------------*/
 let moduleJs = [
 	'app/scripts/common/blur.js',
-	'app/scripts/common/test.js'
+	'app/scripts/common/test.js',
+	// 'app/scripts/common/hover.js'
 ];
 
 /*****************************------------JS and CSS libraries------------*****************************/
@@ -223,6 +228,12 @@ function fonts() {
 		.pipe(gulp.dest(paths.fonts.dest));
 }
 
+/*------------------------docs------------------------*/
+function docs() {
+	return gulp.src(paths.docs.src)
+		.pipe(gulp.dest(paths.docs.dest));
+}
+
 /*------------------------watcher------------------------*/
 function watch() {
 	gulp.watch(paths.scripts.src, scripts);
@@ -271,13 +282,13 @@ exports.toSvg = toSvg;
 
 
 gulp.task('default', gulp.series(
-	gulp.parallel(styles, vendorCSS, scripts, vendorJS, templates, images, fonts, toSvg),
+	gulp.parallel(styles, vendorCSS, scripts, vendorJS, templates, images, fonts, docs, toSvg),
 	gulp.parallel(watch, server)
 ));
 
 gulp.task('build', gulp.series(
 	clean,
-	gulp.parallel(styles, vendorCSS, scripts, vendorJS, templates, images, fonts, toSvg)
+	gulp.parallel(styles, vendorCSS, scripts, vendorJS, templates, images, fonts, docs, toSvg)
 ));
 
 
