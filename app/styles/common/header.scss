@@ -29,6 +29,7 @@
 	}
 }
 
+
 .navigation__list {
 	display: flex;
 	flex-flow: row wrap;
@@ -40,6 +41,7 @@
 	font-size: 20px;
 	&:last-child {
 		margin-right: 0;
+		color: red;
 	}
 }
 
